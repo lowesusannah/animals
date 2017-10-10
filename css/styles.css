@@ -1,7 +1,8 @@
 body {
   background-color: white;
-  font-family: sans-serif;
-  color: darkblue;
+  font-family: 'Roboto', sans-serif;
+  color: #6bad83;
+
 }
 #header {
   margin-top: 0px;
@@ -17,8 +18,10 @@ body {
   position: relative;
 }
 h1 {
-  /*text-align: center;*/
   font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  text-shadow: 3px 3px 10px lightgrey;
 }
 
 
@@ -27,31 +30,30 @@ h1 {
 
 
 img:hover {
-  transform: rotate(15deg);
+  transform: rotate(-360deg);
+  transition: all ease 2.0s;
+  /*box-sizing: border-box;*/
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.2);
+  /*transition: all ease 3.0s;*/
 }
 
-/*button {
-  height: 10px;
-  background-color: white;
-  color: black;
-  padding: 1px;
-  margin-left: 50%;
-  margin-top: 25%;
-}*/
 
 #ocelot {
   height: 50px;
   position: relative;
   margin-left: -58%;
   margin-top: 12%;
+  padding: 10px;
 }
-
-#ocelot:hover {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#ocelottext {
+  display: none;
 }
+/*#ocelot:hover {
 
+}*/
 #howler {
   height: 60px;
   position: absolute;
@@ -105,4 +107,40 @@ img:hover {
   position: absolute;
   margin-left: 57%;
   margin-top: 31%;
+}
+
+.tooltip::after, .tooltip::before {
+  position: absolute;
+  margin-left: 50px;
+  margin-right: auto;
+  /*transform: translate(-50%);*/
+  top: 75%;
+  opacity: 0;
+  transition: all ease 1.5s;
+
+}
+/*.tooltip::before {
+  content: "";
+  border-width: 10px 8px 0 8px;
+  border-style: solid;
+  border-color: (0,0,0,0.5) transparent transparent transparent;
+  margin-left: -8px;
+  top: -20px;
+}*/
+.tooltip::after {
+  content: attr(data-tooltip);
+  background: rgba(0,0,0,0.3);
+  /*top: -20px;*/
+  font-size: 10px;
+  width: 650px;
+  /*margin-left: 0px;*/
+  padding: 14px;
+  border-radius: 10px;
+  color: #eee;
+  border: 1px solid rgba(0,0,0,0.2);
+  /*transform: translateY(-100);*/
+}
+
+.tooltip:hover::before, .tooltip:hover::after {
+  opacity: 1;
 }
