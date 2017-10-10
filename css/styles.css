@@ -1,0 +1,108 @@
+body {
+  background-color: white;
+  font-family: sans-serif;
+  color: darkblue;
+}
+#header {
+  margin-top: 0px;
+  text-align: center;
+}
+#main {
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  height: 700px;
+  width: 1450px;
+  position: fixed;
+  text-align: center;
+  position: relative;
+}
+h1 {
+  /*text-align: center;*/
+  font-size: 40px;
+}
+
+
+/* IMAGES */
+
+
+
+img:hover {
+  transform: rotate(15deg);
+}
+
+/*button {
+  height: 10px;
+  background-color: white;
+  color: black;
+  padding: 1px;
+  margin-left: 50%;
+  margin-top: 25%;
+}*/
+
+#ocelot {
+  height: 50px;
+  position: relative;
+  margin-left: -58%;
+  margin-top: 12%;
+}
+
+#ocelot:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#howler {
+  height: 60px;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 24%;
+}
+#panda {
+  height: 50px;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 11%;
+}
+#hyena {
+  height: 50px;
+  position: absolute;
+  margin-left: 31%;
+  margin-top: 13%;
+}
+#lion {
+  height: 70px;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 15%;
+}
+#yak {
+  height: 55px;
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 5%;
+}
+#whale {
+  height: 50px;
+  position: absolute;
+  margin-left: -10%;
+  margin-top: 33%;
+}
+#wolverine {
+  height: 70px;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 4%;
+}
+#greyparrot {
+  height: 60px;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 27%;
+}
+#wallaby {
+  height: 60px;
+  position: absolute;
+  margin-left: 57%;
+  margin-top: 31%;
+}
